@@ -5,6 +5,7 @@
   const results = document.querySelector(".result");
   const get = document.querySelector(".get");
   const reset = document.querySelector(".reset");
+  let paragraph;
 
   get.addEventListener("click", () => {
     console.log(numbers.value);
@@ -57,8 +58,8 @@
     };
 
     const result = findAllCombinations(numbersArray, targetNumber);
-    console.log("Combinations that add up to the target number:");
-    //console.log(result);
+    // console.log("Combinations that add up to the target number:");
+    // console.log(result);
 
     result.forEach((e, i) => {
       paragraph = document.createElement("p");
