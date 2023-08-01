@@ -8,7 +8,6 @@
   let paragraph;
 
   get.addEventListener("click", () => {
-    console.log(numbers.value);
     const numbersString = numbers.value.split(",");
     const numbersArray = [];
     for (let number of numbersString) {
