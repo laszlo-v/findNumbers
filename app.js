@@ -66,3 +66,11 @@ get.addEventListener("click", () => {
     }
   });
 });
+
+reset.addEventListener("click", () => {
+  numbers.value = "";
+  sum.value = "";
+  if (results.hasChildNodes(paragraph)) {
+    results.removeChild(paragraph);
+  }
+});
