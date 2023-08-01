@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <h1>Find the desired numbers</h1>
+    <p>
+      Find all the combinations (not permutations) from a given series of
+      numbers that needs to add up to get the sum you are looking for.
+    </p>
+    <p>
+      E.g. Let say you have given a series of numbers like: 272224.15, 9226.38,
+      218133.12, 13319.99, -292395, -235571.8, -86565, -86485, -59325, -28957,
+      -4255, -97282.81, -40067, -86071, -70332, -12707, 61212, -44185.37,
+      -19381, -200072, -20641, (imagine you have dozens more), and you want to
+      find out what numbers you need to add up to find the sum -306459.81. Not
+      very easy right?
+    </p>
+    <section>
+      <h2>Enter the numbers in the below box as a coma separated numbers.</h2>
+      <h3>E.g. 123, 144, 12, 1342.65, 59.5</h3>
+      <textarea class="numbers" rows="5"></textarea>
+      <h3>The sum you're looking for</h3>
+      <input type="number" class="sum" />
+      <button class="get">Get</button>
+      <button class="reset">Reset</button>
+      <div class="result"></div>
+    </section>
+  </body>
+</html>
