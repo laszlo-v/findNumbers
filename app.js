@@ -63,17 +63,16 @@
     result.forEach((e, i) => {
       paragraph = document.createElement("p");
       paragraph.textContent = `Combination ${i + 1} is: ${e}`;
-      if (!results.hasChildNodes(paragraph)) {
-        results.appendChild(paragraph);
-      }
+      results.appendChild(paragraph);
     });
+    console.log(results);
   });
 
   reset.addEventListener("click", () => {
     numbers.value = "";
     sum.value = "";
     if (results.hasChildNodes(paragraph)) {
-      results.removeChild(paragraph);
+      results.innerHTML = "";
     }
   });
 })();
